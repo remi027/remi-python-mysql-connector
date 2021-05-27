@@ -14,7 +14,7 @@ def insert(cursor, table, args):
     This function receives:
         The cursor from mysql.connector
         The table where you want to insert things
-            The columns will be sorted by 'ORDER BY column_name ASC' -- (line 58)
+            The columns will be sorted by 'ORDER BY column_name ASC' -- (line 71)
         And the data you want to insert
             The data must be either:
                 A tuple with the values for a single line insert
