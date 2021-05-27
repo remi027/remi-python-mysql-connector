@@ -130,10 +130,10 @@ def insert(cursor, table, args):
         ###DEBUG###
         if debug:
             print("Final string: ", string)
-        try:
-            return cursor.executemany(string, args)
-        except:
-            raise ValueError("ERROR EXECUTE SINGLE.")
+            try:
+                return cursor.executemany(string, args)
+            except:
+                raise ValueError("ERROR EXECUTE SINGLE.")
         ###DEBUG###
 
         # Executing and returning the result
